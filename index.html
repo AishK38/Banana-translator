@@ -5,8 +5,74 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Banana Translator</title>
+    <link href="styles.css" ref="stylesheet">
+    <script src="app.js" type="text/javascript"></script>
+    <style>
+        h1 {
+          color: rgb(20, 20, 94);
+          text-align: center;
+        }
+
+        #output {
+          height: 15vh;
+          width: 70%;
+          border: 1px solid black;
+          margin: 1rem;
+          padding: 1rem;
+          justify-content: center;
+          display: block;
+          margin-right: auto;
+          margin-left: auto;
+          background-color: rgb(239, 240, 218);
+          margin-top: 2rem;
+        }
+
+        textarea {
+            height: 15vh;
+            width: 70%;
+            border: 1px solid black;
+            margin: 1rem;
+            padding: 1rem;
+            margin-right: auto;
+            margin-left: auto;
+            display: block;
+            background-color: rgb(239, 240, 218);
+            text-align: center;
+            margin-top: 4rem;
+        }
+
+        div{
+            text-align: center;
+            margin-top: 2rem;
+            color: white;
+        }
+
+        button{
+            margin: 0 auto;
+            display: block;
+            background-color: rgb(239, 245, 60);
+            width: 10%;
+            height: 15%;
+            margin-top: 2rem;
+        }
+
+        body{
+            background-image: linear-gradient(
+        115deg,
+        rgba(245, 245, 223, 0.932),
+        rgba(45, 46, 32, 0.8)
+      ), url(https://www.wallpapertip.com/wmimgs/166-1664799_minions-4k.jpg);
+        }
+    </style>
+    
 </head>
 <body>
     <h1>Speak Banana!</h1>
+    <section>
+        <textarea id="txt-input" placeholder="Type your sentence in English here for translation"></textarea>
+    </section>    
+    <button id="btn-translate">Translate</button>
+    <div style="font-size: larger;"> Look in the box right below to see the Banana language translation 🙌</div>
+    <div id="output"></div>
 </body>
 </html>
