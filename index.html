@@ -2,12 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Banana Translator</title>
     <link href="styles.css" ref="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Akaya Telivigala' rel='stylesheet'>
-    <script src="app.js" type="text/javascript"></script>
+    
     <style>
         h1 {
           color: yellow;
@@ -26,6 +25,7 @@
           margin-left: auto;
           background-color: rgb(239, 240, 218);
           margin-top: 2rem;
+          color: black;
         }
 
         textarea {
@@ -40,6 +40,8 @@
             background-color: rgb(239, 240, 218);
             text-align: center;
             margin-top: 3rem;
+            font-family: 'Akaya Telivigala';
+            font-size: 22px;
         }
 
         div{
@@ -68,10 +70,11 @@
 <body>
     <h1>Speak Banana!</h1>
     <section>
-        <textarea id="txt-input" placeholder="Type your sentence in English here for translation"></textarea>
+        <textarea id="text-input" placeholder="Type your sentence in English here for translation"></textarea>
     </section>    
     <button id="btn-translate">Translate</button>
     <div style="font-size: larger;"> Look in the box right below to see the Banana language translation 🙌</div>
     <div id="output"></div>
+    <script src="app.js" type="text/javascript"></script>
 </body>
 </html>
